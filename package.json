@@ -19,5 +19,18 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcmus-httt-pttk-n07/web-admin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hcmus-httt-pttk-n07/web-admin/issues"
+  },
+  "homepage": "https://github.com/hcmus-httt-pttk-n07/web-admin#readme"
 }

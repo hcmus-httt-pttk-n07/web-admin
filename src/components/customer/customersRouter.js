@@ -1,11 +1,11 @@
 const express = require("express");
 const { redirect } = require("express/lib/response");
 const router = express.Router();
-const tablesController = require("./tablesController");
+const customersController = require("./customersController");
 
 /*************************** GET methods ***************************/
 //render tables
-router.get("/", tablesController.renderTables);
+router.get("/", customersController.renderTables);
 
 /*************************** POST methods ***************************/
 

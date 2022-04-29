@@ -10,6 +10,10 @@ const billingRouter = require('./components/billing/billingRouter')
 const tablesRouter = require('./components/tables/tablesRouter')
 const profileRouter = require('./components/profile/profileRouter')
 const signInRouter = require('./components/sign-in/sign-inRouter')
+const vaccineInformationRouter = require('./components/vaccine/vaccineRouter')
+const ordersInformationRouter = require('./components/orders/ordersRouter');
+const customersInformationRouter = require('./components/customer/customersRouter')
+const scheduleRouter = require('./components/schedule/scheduleRouter')
 // const loggedInGuard = require('./middlewares/LoggedInGuard')
 
 const app = express();
@@ -41,6 +45,10 @@ app.use('/dashboard', dashboardRouter);
 app.use('/billing', billingRouter);
 app.use('/tables', tablesRouter);
 app.use('/profile', profileRouter);
+app.use('/vaccine', vaccineInformationRouter);
+app.use('/orders', ordersInformationRouter);
+app.use('/customers', customersInformationRouter);
+app.use('/schedule', scheduleRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
